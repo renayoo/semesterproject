@@ -1,0 +1,8 @@
+:root {
+    --primary-blue: rgb(19, 44, 119);
+    --grey-background: rgb(202, 202, 202);
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}

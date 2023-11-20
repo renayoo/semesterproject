@@ -1,0 +1,125 @@
+:root {
+    --science-green: rgb(18, 196, 104)
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: gray; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    height: 91px;
+}
+.header-logo {
+    display: flex;
+    flex-direction: row;
+}
+header img {
+    height: 93px;
+}
+header h1{
+    color: white;
+    display: flex;
+    padding: 10px;
+    font-size: 15px;
+    justify-content: center;
+
+}
+.museum-under {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    text-align: left;
+}
+
+.nav-meny-logo {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+}
+nav {
+    height: 100%;
+
+}
+
+.nav-buttons {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none; 
+    margin: 50;
+    padding: 20px;
+    display: flex; 
+    background-color: gray;    
+}
+.nav-buttons a {
+    height: 100%;
+    min-width: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.nav-buttons a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.first-banner {
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+.banner-img {
+}
+.banner-text {
+    z-index: 1;
+}
+
+
+footer {
+    background-color: red;
+    justify-content: space-between;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    height: 100%;
+}
+footer a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
