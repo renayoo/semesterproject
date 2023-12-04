@@ -3,33 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/contact.css" rel="stylesheet" />
-    <meta name="description" content="This is the webpage for Community Science Museum."/>
-    <title>Community Science Museum</title>
+    <link href="css/homepage.css" rel="stylesheet" />
+    <link href="https://fonts.google.com/specimen/Chakra+Petch?query=chakra" rel="stylesheet">
+    <meta name="description" content="Contact and address info for CSM"/>
+    <title>Visit CSM</title>
 </head>
 <body>
-
-    <header>
-        <h1>Community Science Museum</h1>
-        <nav>
+    <header>     
+        <div class="nav-meny-logo">
+            <div class="header-logo">
+                <img src="images/scott-webb-102825.jpg" alt="picture of outside museum"/>
+                <div class="logo-text">
+                    <span class="museum-under">Community </span>
+                    <span class="museum-under">Science </span>
+                    <span class="museum-under">Museum</span>
+                </div>
+            </div>
+        <!-- BURGER MENU -->
+        <input id="burger-menu-input" type="checkbox" />
+        <label class="burger-menu-label" for="burger-menu-input">
+            <img
+                class="burger-menu-image"
+                src="Hamicon.png"
+                alt="hamburger menu"
+            />
+        </label>
+        <!-- BURGER MENU DROPDOWN -->
+        <div class="burger-menu-box">
+            <div class="burger-menu-button">
+                <label for="burger-menu-input">
+                <img
+                class="burger-menu-image"
+                src="https://w7.pngwing.com/pngs/1008/558/png-transparent-computer-icons-button-close-angle-rectangle-logo.png"
+                alt="hamburger menu"
+                />
+                </label>
+            </div>
             <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="contact.html">Visit Us</a></li>
-                <li><a href="contribution.html">Contribution</a></li>
-                <li><a href="exhibition.html">Exhibitions</a></li>
-                <li><a href="document.html">Document</a></li>
+                <li><a class="burger-menu-item" href="homepage.html">Home</a></li>
+                <li><a class="burger-menu-item" href="contact.html">Visit Us</a></li>
+                <li><a class="burger-menu-item" href="contribution.html">Support us</a></li>
+                <li><a class="burger-menu-item" href="exhibition.html">Exhibits</a></li>
             </ul>
-        </nav>
+        </div>   
+            <nav>
+                <div class="navlist">
+                    <ul class="nav-buttons">
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="contact.html">Visit Us</a></li>
+                        <li><a href="contribution.html">Support</a></li>
+                        <li><a href="exhibition.html">Exhibits</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-
-    <section>
-        <h2>Welcome to the Community Science Museum</h2>
-        <p>This is museum</p>
-    </section>
-
+    <main>
+        <h1>Where to find us?</h1>
+        <div class="container1">
+            <div class="location">
+                <div class="location-img">
+                    <img src="images/mavis-cw-164128.jpg" alt="picture of a hallway in museum"/>
+                </div>
+                <div class="locationtext">
+                    Location:
+                    123 Wonderstreet
+                    Farmville
+                    Norway
+                    Phone number: +47 12345678
+                </div>
+            </div>
+            <div class="entrancetext">
+                <div class="entraancepara">
+                    The entrance is free for all.
+                    There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.
+                    If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.
+                </div>
+                <div class="entranceimg">
+                    <img src="images/library-1132573_1920.jpg" alt="picture of library"/>
+                </div>
+            </div>
+        </div>
+        <div class="openinghourstable">
+            <h3>Opening hours</h3>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Opening Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>10:00 – 16:00</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>10:00 – 16:00</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>10:00 – 16:00</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>10:00 – 19:00</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>9:00 – 16:00</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>9:00 – 13:00</td>
+                </tr>
+            </table>            
+        </div>
+        <div class="accessibility">
+            <h2>Accessibility</h2>
+            <p>
+                The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
+                Food and drink
+                There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.
+                Shop
+                Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.
+            </p>
+        </div>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <h1>Got a question? Ask us!</h1>
+                <p>We'd love to hear from you. Send us a message and we will respond as soon as possible.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name*:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail*:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message*:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group-button">
+                        <button type="submit">Send message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
     <footer>
-        <p><a href="terms-conditions.html">Terms & Conditons</a></p>
+        <p class="terms-policy">
+            <a href="privacypolicy.html">Terms & Conditons
+            <a href="privacypolicy.html">Privacy & Policy 
+            </a>
+        </p>
+            <p class="address-container"> VISIT US AT:
+                <span class="address-container">123 Wonderstreet</span>
+                <span class="address-container">Farmville</span>
+                <span class="address-container">Norway</span>
+            </p>
     </footer>
-
 </body>
 </html>

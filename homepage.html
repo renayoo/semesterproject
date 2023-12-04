@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/homepage.css" rel="stylesheet" />
-    <meta name="description" content="This is the webpage for Community Science Museum."/>
+    <link href="https://fonts.google.com/specimen/Chakra+Petch?query=chakra" rel="stylesheet">
+    <meta name="description" content="This is the homepage for Community Science Museum."/>
     <title>Community Science Museum</title>
 </head>
 <body>
-    <header>
+    <header>     
         <div class="nav-meny-logo">
             <div class="header-logo">
                 <img src="images/scott-webb-102825.jpg" alt="picture of outside museum"/>
@@ -18,14 +19,40 @@
                     <span class="museum-under">Museum</span>
                 </div>
             </div>
+        <!-- BURGER MENU -->
+        <input id="burger-menu-input" type="checkbox" />
+        <label class="burger-menu-label" for="burger-menu-input">
+            <img
+                class="burger-menu-image"
+                src="Hamicon.png"
+                alt="hamburger menu"
+            />
+        </label>
+        <!-- BURGER MENU DROPDOWN -->
+        <div class="burger-menu-box">
+            <div class="burger-menu-button">
+                <label for="burger-menu-input">
+                <img
+                class="burger-menu-image"
+                src="https://w7.pngwing.com/pngs/1008/558/png-transparent-computer-icons-button-close-angle-rectangle-logo.png"
+                alt="hamburger menu"
+                />
+                </label>
+            </div>
+            <ul>
+                <li><a class="burger-menu-item" href="homepage.html">Home</a></li>
+                <li><a class="burger-menu-item" href="contact.html">Visit Us</a></li>
+                <li><a class="burger-menu-item" href="contribution.html">Support us</a></li>
+                <li><a class="burger-menu-item" href="exhibition.html">Exhibits</a></li>
+            </ul>
+        </div>   
             <nav>
                 <div class="navlist">
                     <ul class="nav-buttons">
                         <li><a href="homepage.html">Home</a></li>
                         <li><a href="contact.html">Visit Us</a></li>
-                        <li><a href="contribution.html">Contribution</a></li>
-                        <li><a href="exhibition.html">Exhibitions</a></li>
-                        <li><a href="document.html">Document</a></li>
+                        <li><a href="contribution.html">Support</a></li>
+                        <li><a href="exhibition.html">Exhibits</a></li>
                     </ul>
                 </div>
             </nav>
@@ -33,24 +60,108 @@
     </header>
     <main>
         <div class="first-banner">
-            <div class="first-banner-content">
-                <div class="banner-img">
-                    <img src="images/exhibition-1863344_1920.jpg" alt="picture of exhibition"/></div>
-                <div class="banner-text">   
-                    <h1>Welcome to the Community Science Museum</h1>
-                    <p>This is museum</p>                 
+            <div class="banner-img">
+                <img src="images/exhibition-1863344_1920.jpg" alt="picture of exhibition"/>         
+            </div>
+        </div>
+        <div class="welcome-text">   
+            <h1>Welcome to the Community Science Museum</h1>
+        </div>
+        <div class="container1">
+            <div class="firstpara">
+                <h2>Learn</h2>
+                <div class="firstimg">
+                    <img src="images/reading-2762010_1280.jpg" alt="child reading"/>
                 </div>
-                <div class="banner-buttons">
+            </div>
+            <div class="textpara">
+                The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.
+                We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).
+            </div>
+            <div class="container2">
+                <div class="textpara2">
+                    Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.
+                    You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.
+                    We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts                                         
+                </div>
+                <div class="secondpara">
+                    <h2>Explore</h2>   
+                    <div class="secondimg">
+                        <img src="images/samuel-zeller-158996.jpg" alt="child wearing vr glasses"/>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="openinghourstable">
+            <h3>Opening hours</h3>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Opening Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>10:00 – 16:00</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>10:00 – 16:00</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>10:00 – 16:00</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>10:00 – 19:00</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>9:00 – 16:00</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>9:00 – 13:00</td>
+                </tr>
+            </table>            
+        </div>
+        <div class="news-upcomingtable">
+            <h3>News and upcoming events</h3>
+            <table>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Visiting Professor of Aeronautics</td>
+                    <td>07.01</td>
+                </tr>
+                <tr>
+                    <td>Night in the Museum</td>
+                    <td>10.01</td>
+                </tr>
+                <tr>
+                    <td>Energetica Exhibition on Loan</td>
+                    <td>11.01</td>
+                </tr>
+            </table>            
+        </div>
     </main>
     <footer>
-        <p><a href="terms-conditions.html">Terms & Conditons</a></p>
-        <p><a href="privacypolicy.html">Privacy & Policy</a></p>
-        <p><a href="#FAQ">FAQ</a></p>
-        <p><a href="#socialmedia">Follow us on Social Media</a></p>
-        <p><a href="contact.html">Contact us</a></p>
+        <p class="terms-policy">
+            <a href="privacypolicy.html">Terms & Conditons
+            <a href="privacypolicy.html">Privacy & Policy 
+            </a>
+        </p>
+            <p class="address-container"> VISIT US AT:
+                <span class="address-container">123 Wonderstreet</span>
+                <span class="address-container">Farmville</span>
+                <span class="address-container">Norway</span>
+            </p>
     </footer>
 </body>
 </html>

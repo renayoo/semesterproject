@@ -1,5 +1,6 @@
 :root {
-    --science-green: rgb(18, 196, 104)
+    --headercolor: rgb(84, 99, 154);
+    --bgcolor: rgb(163,174,232);
 }
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -13,55 +14,59 @@ main {
 body {
     margin: 0;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bgcolor);
 }
 
 header {
-    background-color: gray; 
+    background-color: var(--headercolor); 
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    height: 91px;
 }
 .header-logo {
     display: flex;
     flex-direction: row;
+    align-items: center;;
 }
 header img {
     height: 93px;
+    max-width: 120px;
 }
-header h1{
-    color: white;
+.banner-text {
+    color: rgb(0, 0, 0);
     display: flex;
     padding: 10px;
     font-size: 15px;
     justify-content: center;
+    display: flex;
+    z-index: 1;
 
 }
 .museum-under {
     display: block;
-    margin-bottom: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: left;
+    margin: 2px 8px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .nav-meny-logo {
     display: flex;
     flex-direction: row;
-    background-color: gray;
+    background-color:  var(--headercolor);
+    justify-content: space-between;
 }
 nav {
     height: 100%;
-
 }
 
 .nav-buttons {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
     list-style-type: none; 
     margin: 50;
     padding: 20px;
     display: flex; 
-    background-color: gray;    
+    background-color:  rgb(84, 99, 154);
 }
 .nav-buttons a {
     height: 100%;
@@ -76,8 +81,63 @@ nav {
     color: rgb(255, 255, 255);
 }
 .nav-buttons a:hover {
-    background-color: rgb(255, 255, 255);
     color: black;
+}
+
+.burger-menu-image {
+    height: 50px;
+}
+#burger-menu-input {
+    opacity: 0;
+    position: absolute;
+}
+.burger-menu-label {
+    display: none; 
+    align-items: center;  
+    height: 100%;
+    cursor: pointer;
+}
+.burger-menu-button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right : 20px;
+}
+.burger-menu-box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 20px 0;
+    background-color: rgb(49, 37, 66);
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, .6);
+    transition: 0.2s;
+    z-index: 1;
+}
+.burger-menu-box ul {
+    list-style: none;
+}
+.burger-menu-item {
+    display: block;
+    padding: 12px 24px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+.burger-menu-item:hover {
+    background-color: #6e8893;
+}
+#burger-menu-input:checked ~ .burger-menu-box {
+    visibility: visible;
+    right: 0;
 }
 
 .first-banner {
@@ -88,17 +148,29 @@ nav {
 }
 .banner-img {
 }
-.banner-text {
-    z-index: 1;
+
+.welcome-text {
+    text-align: center;
+    text-transform: uppercase;
 }
 
 
 footer {
-    background-color: red;
-    justify-content: space-between;
+    background-color: var(--headercolor);
+    justify-content: space-evenly;
     font-weight: bold;
     position: relative;
     display: flex;
+}
+.terms-policy {
+    display: flex;
+    flex-direction: column;
+}
+.address-container {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin: 2px 8px;
 }
 footer a {
     color: #fff;
@@ -110,16 +182,33 @@ footer a {
 }
 footer a:hover {
     text-decoration: none;
-    background-color: white;
     color: black;
     text-transform: uppercase;
     height: 100%;
     width: 100%;
 }
 
+
 @media (max-width: 900px) {
+
+    .burger-menu-label {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-between;
+    }
+
+
+    .navlist {
+        display: none;
+
+    }
     footer {
         flex-direction: column;
         text-align: center;
     }
+    .address-container {
+        text-align: center;
+    }
+
 }

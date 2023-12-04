@@ -3,33 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/contribution.css" rel="stylesheet" />
-    <meta name="description" content="This is the webpage for Community Science Museum."/>
-    <title>Community Science Museum</title>
+    <link href="css/homepage.css" rel="stylesheet" />
+    <link href="https://fonts.google.com/specimen/Chakra+Petch?query=chakra" rel="stylesheet">
+    <meta name="description" content="Contribution page CSM"/>
+    <title>Support CSM</title>
 </head>
 <body>
-
-    <header>
-        <h1>Community Science Museum</h1>
-        <nav>
+    <header>     
+        <div class="nav-meny-logo">
+            <div class="header-logo">
+                <img src="images/scott-webb-102825.jpg" alt="picture of outside museum"/>
+                <div class="logo-text">
+                    <span class="museum-under">Community </span>
+                    <span class="museum-under">Science </span>
+                    <span class="museum-under">Museum</span>
+                </div>
+            </div>
+        <!-- BURGER MENU -->
+        <input id="burger-menu-input" type="checkbox" />
+        <label class="burger-menu-label" for="burger-menu-input">
+            <img
+                class="burger-menu-image"
+                src="Hamicon.png"
+                alt="hamburger menu"
+            />
+        </label>
+        <!-- BURGER MENU DROPDOWN -->
+        <div class="burger-menu-box">
+            <div class="burger-menu-button">
+                <label for="burger-menu-input">
+                <img
+                class="burger-menu-image"
+                src="https://w7.pngwing.com/pngs/1008/558/png-transparent-computer-icons-button-close-angle-rectangle-logo.png"
+                alt="hamburger menu"
+                />
+                </label>
+            </div>
             <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="contact.html">Visit Us</a></li>
-                <li><a href="contribution.html">Contribution</a></li>
-                <li><a href="exhibition.html">Exhibitions</a></li>
-                <li><a href="document.html">Document</a></li>
+                <li><a class="burger-menu-item" href="homepage.html">Home</a></li>
+                <li><a class="burger-menu-item" href="contact.html">Visit Us</a></li>
+                <li><a class="burger-menu-item" href="contribution.html">Support us</a></li>
+                <li><a class="burger-menu-item" href="exhibition.html">Exhibits</a></li>
             </ul>
-        </nav>
+        </div>   
+            <nav>
+                <div class="navlist">
+                    <ul class="nav-buttons">
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="contact.html">Visit Us</a></li>
+                        <li><a href="contribution.html">Support</a></li>
+                        <li><a href="exhibition.html">Exhibits</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-
-    <section>
-        <h2>Welcome to the Community Science Museum</h2>
-        <p>This is museum</p>
-    </section>
-
+    <main>
+        <div class="banner">
+            <div class="banner-contribution">
+                <h1>Contribution</h1>
+            </div>
+            <div class="banner-img">
+                <img src="images/skeleton-414543_1920.jpg" 
+                alt="skeletons"/>
+            </div>
+        </div>
+        <div class="contribution-container">
+            <h2>
+                Get Involved
+            </h2>
+            <p class="support">
+                <h3>Support</h3>
+                There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community.
+                You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.
+            </p>
+            <p class="volunteer">
+                <h3>Volunteer</h3>
+                A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strategies for the museum.
+                You can help volunteer in a number of different spheres. Please contact us if you’d like to find out more about how you can get involved.
+            </p>
+            <p class="internships">
+                <h3>Internships</h3>
+                Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum.
+            </p>
+        </div>
+    </main>
     <footer>
-        <p></p>
+        <p class="terms-policy">
+            <a href="privacypolicy.html">Terms & Conditons
+            <a href="privacypolicy.html">Privacy & Policy 
+            </a>
+        </p>
+            <p class="address-container"> VISIT US AT:
+                <span class="address-container">123 Wonderstreet</span>
+                <span class="address-container">Farmville</span>
+                <span class="address-container">Norway</span>
+            </p>
     </footer>
-
 </body>
 </html>

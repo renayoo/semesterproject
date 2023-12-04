@@ -3,33 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/exhibition.css" rel="stylesheet" />
-    <meta name="description" content="This is the webpage for Community Science Museum."/>
-    <title>Community Science Museum</title>
+    <link href="css/homepage.css" rel="stylesheet" />
+    <link href="https://fonts.google.com/specimen/Chakra+Petch?query=chakra" rel="stylesheet">
+    <meta name="description" content="Exhibits at CSM"/>
+    <title>Exhibits</title>
 </head>
 <body>
-
-    <header>
-        <h1>Community Science Museum</h1>
-        <nav>
+    <header>     
+        <div class="nav-meny-logo">
+            <div class="header-logo">
+                <img src="images/scott-webb-102825.jpg" alt="picture of outside museum"/>
+                <div class="logo-text">
+                    <span class="museum-under">Community </span>
+                    <span class="museum-under">Science </span>
+                    <span class="museum-under">Museum</span>
+                </div>
+            </div>
+        <!-- BURGER MENU -->
+        <input id="burger-menu-input" type="checkbox" />
+        <label class="burger-menu-label" for="burger-menu-input">
+            <img
+                class="burger-menu-image"
+                src="Hamicon.png"
+                alt="hamburger menu"
+            />
+        </label>
+        <!-- BURGER MENU DROPDOWN -->
+        <div class="burger-menu-box">
+            <div class="burger-menu-button">
+                <label for="burger-menu-input">
+                <img
+                class="burger-menu-image"
+                src="https://w7.pngwing.com/pngs/1008/558/png-transparent-computer-icons-button-close-angle-rectangle-logo.png"
+                alt="hamburger menu"
+                />
+                </label>
+            </div>
             <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="contact.html">Visit Us</a></li>
-                <li><a href="contribution.html">Contribution</a></li>
-                <li><a href="exhibition.html">Exhibitions</a></li>
-                <li><a href="document.html">Document</a></li>
+                <li><a class="burger-menu-item" href="homepage.html">Home</a></li>
+                <li><a class="burger-menu-item" href="contact.html">Visit Us</a></li>
+                <li><a class="burger-menu-item" href="contribution.html">Support us</a></li>
+                <li><a class="burger-menu-item" href="exhibition.html">Exhibits</a></li>
             </ul>
-        </nav>
+        </div>   
+            <nav>
+                <div class="navlist">
+                    <ul class="nav-buttons">
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="contact.html">Visit Us</a></li>
+                        <li><a href="contribution.html">Support</a></li>
+                        <li><a href="exhibition.html">Exhibits</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-
-    <section>
-        <h2>Welcome to the Community Science Museum</h2>
-        <p>This is museum</p>
-    </section>
-
+    <main>
+        <h1>Upcoming events</h1>
+        <div class="upcomingevents">
+            <div class="eventlist">
+                <div class="events">
+                    <div class="event1">
+                        <img src="images/andrew-ruiz-348421.jpg" alt="man in space suit"/>
+                        <p>Visiting Professor of Aeronautics</p>
+                        <span class="date1">07.01</span>
+                    </div>
+                    <div class="event2">
+                        <img src="images/roberto-nickson-396152.jpg" alt="picture of museum at night"/>
+                        <p>Night in the Museum</p>
+                        <span class="date1">10.01</span>
+                    </div>
+                    <div class="event3">
+                        <img src="images/scientific-2040795_1280.jpg" alt="scissor of Aeronautics"/>
+                        <p>Energetica Exhibition on Loan</p>
+                        <span class="date1">11.01</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="exhibits">
+            <h2>Exhibits</h2>
+            <div class="kids">
+                <h3>For kids</h3>
+                <p>
+                    Are you a young person looking to learn more about science? Come on down to our museum, there’s plenty to see and do.
+                    You can learn about Newtonian physics from our bumper swing, or why not travel back in time and meet our resident Woolly Mammoth? Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore.
+                    We also have the Young Stars club which meets once a week on a Saturday between 10:00 and 13:00 where you’ll get to explore and experiment with our team of experts.
+                    During the school holidays we run special holiday clubs where you can join other children your age to go on a journey of discovery. Each holiday we pick a new theme to explore. To find out more about the holiday club and how you can join, send us a message.</p>
+                <img src="images/markus-spiske-197281.jpg" alt="kids toy" />
+            </div>
+            <div class="teachers">
+                <h3>For teachers</h3>
+                <p>
+                    As a community-driven museum, we want to work with schools to create places of learning and exploring. Our team are on hand to give your students guided tours of the museum, teach them in our learning laboratory, and provide great video presentations that will excite and inspire them.
+                    Please get in touch with us here to find out more about our facilities and to arrange a time to bring your students through for a visit.</p>
+            </div>
+            <div class="researchers">
+                <h3>Researchers</h3>
+                <p>
+                    Are you looking to get involved with our team of researchers and academics? Our museum offers various ways for you to use our resources and contribute towards them. We have online records, laboratory space, and a working relationship with a number of universities around the country.
+                </p>
+                <img src="images/people-219985_1280.jpg" alt="researcher looking into microscope" />
+            </div>           
+            <div class="cosmology">
+                <h3>Cosmology</h3>
+                <p>
+                    Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.
+                    Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.
+                </p>
+            </div>            
+            <div class="evolution">
+                <h3>Evolotion</h3>
+                <p>
+                    For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.
+                    Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.
+                </p>
+            </div>                   
+            <div class="biology">
+                <h3>Biology and Medicine</h3>
+                <p>
+                    From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.
+                    For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.
+                    Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.
+                </p>
+            </div>            
+            <div class="robotics">
+                <h3>Robotics and AI</h3>
+                <p>
+                    The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.
+                </p>
+            </div>
+            <div class="ecology">
+                <h3>Ecology</h3>
+                <p>
+                    As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.
+                    In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.
+                </p>
+            </div>
+        </div>
+    </main>
     <footer>
-        <p></p>
+        <p class="terms-policy">
+            <a href="privacypolicy.html">Terms & Conditons
+            <a href="privacypolicy.html">Privacy & Policy 
+            </a>
+        </p>
+            <p class="address-container"> VISIT US AT:
+                <span class="address-container">123 Wonderstreet</span>
+                <span class="address-container">Farmville</span>
+                <span class="address-container">Norway</span>
+            </p>
     </footer>
-
 </body>
-</html>    
+</html>

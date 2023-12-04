@@ -3,33 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/document.css" rel="stylesheet" />
-    <meta name="description" content="This is the webpage for Community Science Museum."/>
-    <title>Community Science Museum</title>
+    <link href="css/homepage.css" rel="stylesheet" />
+    <link href="https://fonts.google.com/specimen/Chakra+Petch?query=chakra" rel="stylesheet">
+    <meta name="description" content="Terms and conditions and privacy policy"/>
+    <title>Terms and conditions</title>
 </head>
 <body>
-
-    <header>
-        <h1>Community Science Museum</h1>
-        <nav>
+    <header>     
+        <div class="nav-meny-logo">
+            <div class="header-logo">
+                <img src="images/scott-webb-102825.jpg" alt="picture of outside museum"/>
+                <div class="logo-text">
+                    <span class="museum-under">Community </span>
+                    <span class="museum-under">Science </span>
+                    <span class="museum-under">Museum</span>
+                </div>
+            </div>
+        <!-- BURGER MENU -->
+        <input id="burger-menu-input" type="checkbox" />
+        <label class="burger-menu-label" for="burger-menu-input">
+            <img
+                class="burger-menu-image"
+                src="Hamicon.png"
+                alt="hamburger menu"
+            />
+        </label>
+        <!-- BURGER MENU DROPDOWN -->
+        <div class="burger-menu-box">
+            <div class="burger-menu-button">
+                <label for="burger-menu-input">
+                <img
+                class="burger-menu-image"
+                src="https://w7.pngwing.com/pngs/1008/558/png-transparent-computer-icons-button-close-angle-rectangle-logo.png"
+                alt="hamburger menu"
+                />
+                </label>
+            </div>
             <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="contact.html">Visit Us</a></li>
-                <li><a href="contribution.html">Contribution</a></li>
-                <li><a href="exhibition.html">Exhibitions</a></li>
-                <li><a href="document.html">Document</a></li>
+                <li><a class="burger-menu-item" href="homepage.html">Home</a></li>
+                <li><a class="burger-menu-item" href="contact.html">Visit Us</a></li>
+                <li><a class="burger-menu-item" href="contribution.html">Support us</a></li>
+                <li><a class="burger-menu-item" href="exhibition.html">Exhibits</a></li>
             </ul>
-        </nav>
+        </div>   
+            <nav>
+                <div class="navlist">
+                    <ul class="nav-buttons">
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="contact.html">Visit Us</a></li>
+                        <li><a href="contribution.html">Support</a></li>
+                        <li><a href="exhibition.html">Exhibits</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
+    <main>
 
-    <section>
-        <h2>Welcome to the Community Science Museum</h2>
-        <p>This is museum</p>
-    </section>
-
+    </main>
     <footer>
-        <p></p>
+        <p class="terms-policy">
+            <a href="privacypolicy.html">Terms & Conditons
+            <a href="privacypolicy.html">Privacy & Policy 
+            </a>
+        </p>
+            <p class="address-container"> VISIT US AT:
+                <span class="address-container">123 Wonderstreet</span>
+                <span class="address-container">Farmville</span>
+                <span class="address-container">Norway</span>
+            </p>
     </footer>
-
 </body>
 </html>
