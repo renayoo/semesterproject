@@ -4,19 +4,21 @@
     --containercolor: rgb(163,137,237)
 }
 * {
-    font-family: 'chakrapetch'
+    font-family: 'Chakra Petch Regular';
     box-sizing: border-box;
 }
 
-
 @font-face {
-    font-family: 'ChakraPetch';
-    src: url(Users/renay/OneDrive/Dokumenter/.vscode/Coding files/semesterproject/fonts/chakra/ChakraPetch-regular.ttf);
+    font-family: 'Chakra Petch Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Chakra Petch Regular'), url('ChakraPetch-Regular.woff') format('woff');
 }
+
+
 
 main {
     height: 100%;
-    font-family:
 }
 
 body {
