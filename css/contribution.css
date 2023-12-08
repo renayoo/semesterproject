@@ -84,4 +84,7 @@ h3 {
     .internships {
         max-width: 100%; 
     }
+    .imagesupp img {
+        width: 100%
+    }
 }

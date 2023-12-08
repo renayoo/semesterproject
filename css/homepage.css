@@ -29,9 +29,6 @@ body {
 
 header {
     background-color: var(--headercolor)
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
 }
 
 .header-logo {
