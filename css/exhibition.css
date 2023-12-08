@@ -1,4 +1,71 @@
 @import url('homepage.css');
 
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 30px;
+}
+
+.upcomingevents {
+    display: flex;
+    justify-content: center;
+    background-color: var(--headercolor);
+}
+
+.eventlist {
+    display: flex;
+    margin: 5px;
+}
+
+.events {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.events img {
+    width: 430px;
+    height: 500px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.titles-event {
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.date1 {
+    display: block;
+    color: #000000;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+} 
+
+.event1,
+.event2,
+.event3 {
+    background-color: rgb(255, 255, 255);
+}
 
 
+@media (max-width: 1000px) {
+    .events {
+        flex-direction: column;
+    }
+    .events img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
