@@ -8,10 +8,14 @@ h2 {
     font-size: 30px;
 }
 
+.eventsupcoming {
+    font-size: 30px;
+    text-transform: uppercase;
+}
 .upcomingevents {
     display: flex;
     justify-content: center;
-    background-color: var(--headercolor);
+    background-color: lightgreen;
 }
 
 .eventlist {
@@ -26,7 +30,7 @@ h2 {
     text-align: center;
     margin: 10px;
     padding: 15px;
-    background-color: #ffffff;
+    background-color: lightgreen;
     border-radius: 8px;
 }
 
@@ -56,11 +60,47 @@ h2 {
 .event1,
 .event2,
 .event3 {
-    background-color: rgb(255, 255, 255);
+    background-color: lightgreen;
 }
 
 
-@media (max-width: 1000px) {
+.exhibits {
+    margin: 20px;
+    justify-content: center;
+}
+
+.exhibits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.exhibits li {
+    margin-bottom: 20px;
+    display: flex;
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+.exhibits img {
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+}
+.exhibits img {
+    width: 600px;
+    height: 400px;
+    margin: 5px;
+    padding: 5px;
+}
+.exhibits p {
+    padding: 30px;
+    justify-content: center;
+    line-height: 2;
+}
+
+
+@media (max-width: 1500px) {
     .events {
         flex-direction: column;
     }
@@ -68,4 +108,14 @@ h2 {
         width: 100%;
         padding: 0;
         margin: 0;
+    }
+
+
+    @media (max-width: 1000px) {
+    .exhibits li {
+        flex-direction: column;
+    }
+    
+    .exhibits img {
+        width: 100%;
     }
