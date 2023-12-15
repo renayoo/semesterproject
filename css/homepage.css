@@ -21,7 +21,6 @@ main {
 body {
     margin: 0;
     height: 100%;
-    background-color: 
 }
 
 header {
@@ -256,13 +255,13 @@ td, th {
 
 .openinghourstable,
 .newsupcomingtable {
-    background-color: var(--headercolor);
+    background-color: lightgreen;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 10px;
     font-size: 20px;
     color: rgb(0, 0, 0);
-    width: 700px;
+    width: 600px;
     height: 600px; 
 }
 
@@ -289,7 +288,7 @@ td, th {
 }
 
 .teachers {
-    background-color: var(--headercolor);
+    background-color: lightgreen;
     padding: 5px;
     border-radius: 50px;
     margin: 10px;
@@ -402,6 +401,7 @@ footer a:hover {
 }
 
 @media (max-width: 1450px) {
+    
     .banner-openhrs-events {
         flex-direction: column;
         width: 100%;

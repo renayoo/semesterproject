@@ -54,7 +54,8 @@ h3 {
     background-color: rgb(255, 255, 255);
 }
 
-.donate-button {
+.donate-button,
+.contactus {
     background-color: lightgreen;
     color: rgb(0, 0, 0);
     padding: 10px 20px;
@@ -64,12 +65,15 @@ h3 {
     text-transform: uppercase;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.donate-button:hover {
+.donate-button:hover,
+.contactus:hover {
     background-color: #000000;
     color: lightgreen;
 }
+
 
 .imagesupport-container {
     flex: 1; 
