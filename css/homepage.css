@@ -273,12 +273,13 @@ td, th {
 .forpeople {
     max-width: 400px; 
     width: 100%;
-    background-color: var(--headercolor);
+    background-color: lightgreen;
 }
 .forpeople img {
     width: 100%;
     height: 500px;
 }
+
 .forpeople p {
     padding: 10px;
 }
@@ -380,6 +381,10 @@ footer a:hover {
         padding: 10px;
         text-align: left;
     }
+    .forpeople {
+        max-width: 100%;
+        margin: 0;
+    }
 }
 @media (max-width: 900px) {
 
@@ -444,7 +449,7 @@ footer a:hover {
     .openinghourstable,
     .newsupcomingtable {
         height: auto; 
-        width: 100%;
+        width: 300px;
         padding: auto;
     }
     td, th {
@@ -456,7 +461,6 @@ footer a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
     footer {
         flex-direction: column;
@@ -467,21 +471,4 @@ footer a:hover {
 
     }
 
-}
-
-@media (max-width: 700px) {
-    .kids {
-        display: flex;
-        flex-direction: column;
-    }
-    .kids img {
-        width: 100%;
-    }
-    .researchers {
-        display: flex;
-        flex-direction: column;
-    }
-    .researchers img {
-        width: 100%;
-    }
 }

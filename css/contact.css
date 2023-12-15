@@ -69,14 +69,15 @@ h3 {
     display: flex;
     margin: 30px;
 }
-.openinghourstablecon {
-    display: block;
-    width: 980px;
-    height: 700px;
+.openinghourstable {
     background-color: lightgreen;
-    border-radius: 50px;
-    text-align: center;
-    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 600px;
+    height: 600px; 
 }
 .accessibility,
 .food,
