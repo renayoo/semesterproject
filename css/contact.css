@@ -96,7 +96,7 @@ h3 {
     overflow: auto;
     margin-bottom: 5px;
     margin: 30px;
-    border-radius: 50px;  
+    border-radius: 50px;
 }
 
 .contact-form {
@@ -132,6 +132,10 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+button:hover {
+    background-color: aliceblue;
+    color: black;
 }
 
 @media (max-width: 900px) {
