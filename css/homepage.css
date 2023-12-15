@@ -470,5 +470,6 @@ footer a:hover {
         text-align: center;
 
     }
-
+    @media (max-width: 700px) {
+        
 }
