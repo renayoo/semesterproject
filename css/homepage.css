@@ -203,6 +203,8 @@ td, th {
     background-color: lightgreen;
     padding: 20px;
     align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .container1,
@@ -249,8 +251,7 @@ td, th {
 
 .banner-openhrs-events {
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
+    justify-content: space-evenly;
 }
 
 .openinghourstable,
@@ -264,60 +265,23 @@ td, th {
     width: 600px;
     height: 600px; 
 }
-
-.titles-for {
-    font-size: 30px;
-    text-align: start;
-    margin: 50px;
-}
-.kids {
+.card-container {
     display: flex;
-    padding: 50px;
-    align-items: center;
-}
-.textkids {
-    font-size: 18px;
-}
-.kids img {
-    overflow: hidden;
-    border-radius: 50px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.teachers {
-    background-color: lightgreen;
-    padding: 5px;
-    border-radius: 50px;
-    margin: 10px;
-}
-.teachers p {
-    font-size: 18px;
-    padding: 50px;
-}
-
-.researchers {
-    display: flex;
-    align-items: center;
-}  
-
-.researchers p{
-    font-size: 18px;
-    padding: 50px; 
-}
-
-.researchers img {
-    overflow: hidden;
-    border-radius: 50px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     margin: 20px;
 }
-
+.forpeople {
+    max-width: 400px; 
+    width: 100%;
+    background-color: var(--headercolor);
+}
+.forpeople img {
+    width: 100%;
+    height: 500px;
+}
+.forpeople p {
+    padding: 10px;
+}
 .exhibits-container {
     display: flex;
     justify-content: space-around;
@@ -400,17 +364,17 @@ footer a:hover {
     width: 100%;
 }
 
-@media (max-width: 1450px) {
-    
+@media (max-width: 1250px) {
+
     .banner-openhrs-events {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
     .openinghourstable,
     .newsupcomingtable {
+        width: 600px;
         height: 600px; 
-        width: 100%;
-        text-align: center;
     }
     td, th {
         padding: 10px;
@@ -425,13 +389,14 @@ footer a:hover {
         margin: 20px;
         justify-content: space-between;
     }
-
     .navlist {
         display: none;
     }
-
     h2 {
         font-size: 50px;
+    }
+    h3 {
+        font-size: 20px;
     }
 
     .firstimg {
@@ -480,13 +445,19 @@ footer a:hover {
     .newsupcomingtable {
         height: auto; 
         width: 100%;
+        padding: auto;
     }
-
     td, th {
         padding: 10px;
         text-align: left;
     }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
+    }
     footer {
         flex-direction: column;
         text-align: center;
@@ -495,6 +466,10 @@ footer a:hover {
         text-align: center;
 
     }
+
+}
+
+@media (max-width: 700px) {
     .kids {
         display: flex;
         flex-direction: column;
@@ -502,5 +477,11 @@ footer a:hover {
     .kids img {
         width: 100%;
     }
+    .researchers {
+        display: flex;
+        flex-direction: column;
+    }
+    .researchers img {
+        width: 100%;
+    }
 }
-
