@@ -5,7 +5,7 @@
 
 
 @font-face {
-    font-family: 'Chakra Petch Regular';
+    font-family: 'Chakra Petch Regular', sans-serif;
     font-style: normal;
     font-weight: normal;
     src: url('fonts/chakra-petch-cufonfonts-webfont/ChakraPetch-Regular.woff') format('woff');
@@ -272,6 +272,10 @@ td, th {
     justify-content: space-around;
     margin: 20px;
 }
+hr {
+    visibility: hidden;
+}
+
 .forpeople {
     max-width: 400px; 
     width: 100%;
@@ -452,6 +456,17 @@ footer a:hover {
         height: auto; 
         width: 300px;
         padding: auto;
+    }
+    hr {
+        border: 0;
+        height: 2px; 
+        background-color: #333; 
+        margin: 20px 0; 
+        visibility: visible;
+    }
+    .kids hr {
+        visibility: hidden;
+        margin: 0 0;
     }
     td, th {
         padding: 10px;

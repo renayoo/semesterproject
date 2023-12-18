@@ -63,7 +63,9 @@ h2 {
     background-color: var(--contentcolor);
 }
 
-
+hr {
+    margin: 0;
+}
 .exhibits {
     margin: 20px;
     justify-content: center;
