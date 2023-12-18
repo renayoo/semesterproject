@@ -7,11 +7,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'ChakraPetch Regular', sans-serif;
-    src: url(fonts/ChakraPetch/ChakraPetch-Regular.ttf) format('ttf')
-}
-
 main {
     height: 100%;
 }
