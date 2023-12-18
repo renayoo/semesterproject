@@ -65,6 +65,10 @@ h2 {
 
 hr {
     margin: 0;
+    visibility: visible;
+    height: 2px;
+    background-color: #000000;
+
 }
 .exhibits {
     margin: 20px;
