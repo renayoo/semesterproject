@@ -8,11 +8,8 @@
 }
 
 @font-face {
-    font-family: 'Chakra Petch Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Chakra Petch Regular'), url('ChakraPetch-Regular.woff') format('woff');
-    font-display:
+    font-family: 'ChakraPetch Regular', sans-serif;
+    src: url(fonts/ChakraPetch/ChakraPetch-Regular.ttf) format('ttf')
 }
 
 main {
