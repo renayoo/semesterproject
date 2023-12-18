@@ -15,7 +15,7 @@ h2 {
 .upcomingevents {
     display: flex;
     justify-content: center;
-    background-color: lightgreen;
+    background-color: var(--contentcolor);
 }
 
 .eventlist {
@@ -30,7 +30,7 @@ h2 {
     text-align: center;
     margin: 10px;
     padding: 15px;
-    background-color: lightgreen;
+    background-color: var(--contentcolor);
     border-radius: 8px;
 }
 
@@ -60,7 +60,7 @@ h2 {
 .event1,
 .event2,
 .event3 {
-    background-color: lightgreen;
+    background-color: var(--contentcolor);
 }
 
 
@@ -77,7 +77,7 @@ h2 {
 .exhibits li {
     margin-bottom: 20px;
     display: flex;
-    background-color: lightgreen;
+    background-color: var(--contentcolor);
     border-radius: 5px;
     padding: 10px;
     overflow: hidden;

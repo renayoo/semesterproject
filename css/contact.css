@@ -17,7 +17,7 @@ h3 {
 .container1 {
     display: flex;
     flex-direction: column;
-    background-color: lightgreen;
+    background-color: var(--contentcolor);
     padding: 50px;
     align-items: center;
     margin-bottom: 20px;
@@ -84,7 +84,7 @@ h3 {
 
 
 .contact-form-container {
-    background-color: lightgreen;
+    background-color: var(--contentcolor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +148,7 @@ button:hover {
     }
     .location img {
         width: 100%;
-        height: 800px;
+        height: 500px;
     }
     .entrancetext {
         flex-direction: column;
@@ -156,6 +156,4 @@ button:hover {
         padding: 0;
         margin: 0;
     }
-    @media (max-width: px) {
-
 }

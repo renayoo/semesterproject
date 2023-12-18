@@ -1,6 +1,6 @@
 :root {
     --headercolor: rgb(242, 242, 242);
-    --: lightgreen;
+    --contentcolor: rgb(137, 251, 149, 1);
 }
 * {
     font-family: 'Chakra Petch Regular';
@@ -12,6 +12,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('Chakra Petch Regular'), url('ChakraPetch-Regular.woff') format('woff');
+    font-display:
 }
 
 main {
@@ -200,7 +201,7 @@ td, th {
 }
 
 .bigcontainer {
-    background-color: lightgreen;
+    background-color: var(--contentcolor);
     padding: 20px;
     align-items: center;
     margin-bottom: 10px;
@@ -256,7 +257,7 @@ td, th {
 
 .openinghourstable,
 .newsupcomingtable {
-    background-color: lightgreen;
+    background-color: var(--contentcolor);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -273,13 +274,12 @@ td, th {
 .forpeople {
     max-width: 400px; 
     width: 100%;
-    background-color: lightgreen;
+    background-color: var(--contentcolor);
 }
 .forpeople img {
     width: 100%;
     height: 500px;
 }
-
 .forpeople p {
     padding: 10px;
 }
@@ -289,7 +289,7 @@ td, th {
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: lightgreen;
+    background-color: var(--contentcolor);
 }
 
 .exhibit {
@@ -471,5 +471,5 @@ footer a:hover {
 
     }
     @media (max-width: 700px) {
-        
+
 }
