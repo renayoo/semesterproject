@@ -3,7 +3,7 @@
     --contentcolor: rgb(137, 251, 149, 1);
 }
 * {
-    font-family: 'Chakra Petch Regular';
+    font-family: 'Chakra Petch Regular', sans-serif;
     box-sizing: border-box;
 }
 
