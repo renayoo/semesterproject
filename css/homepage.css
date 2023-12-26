@@ -244,6 +244,8 @@ td, th {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 .container2 img {
     width: 100%;
@@ -486,6 +488,4 @@ footer a:hover {
         text-align: center;
 
     }
-    @media (max-width: 700px) {
-
 }
